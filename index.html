@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExoPlanetas</title>
     <link rel="stylesheet" href="estilos.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +21,20 @@
     </header>
     <main>
         <section class="planeta">
-            <img src="img/DALL·E 2023-10-07 16.25.20 - Kepler-438b, a confirmed exoplanet discovered in 2015 using the transit method, orbits its star Kepler-438, situated 472.9 light-years away in the Lyr.png" alt="" width="500" height="500">
+            <h1>Historia</h1>
+            <p class="historia-text">
+                Kepler-438b, un exoplaneta que forma parte del sistema Kepler-438, se encuentra a 472.9 años luz de distancia de nuestro sistema solar y fue confirmado en enero de 2015 gracias al telescopio espacial Kepler. Este descubrimiento no solo marcó un hito en la exploración espacial, sino que también redefinió nuestro entendimiento de la habitabilidad en el universo.
+                <br>
+                Inicialmente, Kepler-438b parecía un prometedor análogo terrestre debido a su masa, radio y temperatura de equilibrio similares a los de la Tierra. Sin embargo, su proximidad a una enana naranja de tipo K-tardío llamada Kepler-438 presentó desafíos significativos. La radiación intensa que recibía de su estrella y su órbita cercana planteaban preocupaciones sobre su habitabilidad.
+<br>
+                Uno de los desafíos más notables es el anclaje de marea, que ha llevado a una sincronización entre su órbita y rotación, lo que significa que tiene un lado diurno abrasador y un lado nocturno congelado. Esto dificulta la presencia de vida compleja en su superficie.
+<br>
+                Además, la alta radiación y la exposición a los vientos estelares de su estrella podrían comprometer su atmósfera. Su temperatura media superficial, de 37.45 °C, es mucho más cálida que la de la Tierra, y su proximidad a Kepler-438 aumenta la fotólisis del agua superficial, lo que podría llevar a un intenso escape hidrodinámico y un efecto invernadero descontrolado.
+<br>
+                A pesar de estos desafíos, la esperanza fue reavivada en junio de 2022 cuando científicos informaron sobre una "misteriosa" señal de radio procedente de la región de Kepler-438b, abriendo la posibilidad de indicios de vida o actividad interesante en este exoplaneta.
+<br>
+                La historia de Kepler-438b es un recordatorio de la complejidad de la búsqueda de vida más allá de la Tierra y cómo las condiciones específicas de un exoplaneta pueden influir en su habitabilidad. A medida que continuamos explorando el universo, seguimos buscando respuestas sobre la existencia de vida en otros rincones del cosmos.
+            </p>
         </section>
         <!-- Agrega más secciones para otros planetas aquí -->
     </main>
@@ -28,7 +42,7 @@
         <div class="md-medio">
             <h1>Killer</h1>
         
-            <img src="img/235382_Kepler-438b, a confirmed exoplanet discovered in 2_xl-1024-v1-0.png" alt="" width="500" height="500">
+            <img src="img/planeta/235382_Kepler-438b, a confirmed exoplanet discovered in 2_xl-1024-v1-0.png" alt="" width="500" height="500">
         </div>
           
     </section>
@@ -44,9 +58,8 @@
     <section class="cenotes" id="cenotes">
         <h1>Cenotes</h1>
        
-        
         <!-- Agrega el carrusel -->
-        <div class="carrusel">
+        <div class="carrusel" id="Cenotes">
             <button class="anterior" id="boton-anterior">Anterior</button>
             <div class="visor">
                 <div class="imagenes-carrusel">
