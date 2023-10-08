@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExoPlanetas</title>
-    <link rel="stylesheet" href="estilos.css">
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ExoPlanetas</title>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>        
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="public/index.css">
+        <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+        <script type="importmap">
+        {
+            "imports": {
+            "three": "https://unpkg.com/three@v0.153.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@v0.153.0/examples/jsm/"
+            }
+        }
+        </script>
+	</head>
+	<body>
+    <div id="progress-container">
+      <div id="progress">LOADING 0/100</div>
+    </div>
     <header>
-        <h1>ExoPlanetas</h1>
+        <h1>ExoPlanetas Kepler-438b</h1>
         <nav>
             <ul>
                 <li><a href="#historia">Historia</a></li>
-                <li><a href="#tecnologia">Tecnología</a></li>
-                <li><a href="#especies">Especies</a></li>
+                <li><a href="#flora">Flora</a></li>
+                <li><a href="#fauna">Fauna</a></li>
                 <li><a href="#Cenotes">Cenotes</a></li>
+                <li><a href="#marina">Vida Marina</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="planeta">
-            <h1>Historia</h1>
+            <h1>Historia Kepler-438b</h1>
+            
             <p class="historia-text">
                 Kepler-438b, un exoplaneta que forma parte del sistema Kepler-438, se encuentra a 472.9 años luz de distancia de nuestro sistema solar y fue confirmado en enero de 2015 gracias al telescopio espacial Kepler. Este descubrimiento no solo marcó un hito en la exploración espacial, sino que también redefinió nuestro entendimiento de la habitabilidad en el universo.
                 <br>
@@ -35,9 +50,13 @@
 <br>
                 La historia de Kepler-438b es un recordatorio de la complejidad de la búsqueda de vida más allá de la Tierra y cómo las condiciones específicas de un exoplaneta pueden influir en su habitabilidad. A medida que continuamos explorando el universo, seguimos buscando respuestas sobre la existencia de vida en otros rincones del cosmos.
             </p>
+            
+            <div id="scene-container" style="width: 500px; height: 400px; margin: auto;"></div>
         </section>
+        
         <!-- Agrega más secciones para otros planetas aquí -->
     </main>
+   
     <section class="historia" id="historia">
         <div class="md-medio">
             <h1>Killer</h1>
@@ -46,14 +65,37 @@
         </div>
           
     </section>
-    <section class="tecnologia" id="tecnologia">
-        <!-- Contenido de la tecnología... -->
-        <h1>tecnologia</h1>
-    </section>
-    <section class="especies" id="especies">
-        <!-- Contenido de las especies... -->
-        <h1>especies</h1>
+    <section class="flora" id="flora">
         
+        <h1>Flora</h1>
+        <div class="carrusel" id="Cenotes">
+            <button class="anterior" id="boton-anterior">Anterior</button>
+            <div class="visor">
+                <div class="imagenes-carrusel">
+                    <!-- Las imágenes se mostrarán aquí -->
+                    <img src="img/fauna/Prompt 1.jpg" alt="">
+                    
+                </div>
+            </div>
+            <button class="siguiente" id="boton-siguiente">Siguiente</button>
+        </div>
+
+    </section>
+    <section class="fauna" id="fauna">
+        
+        <h1>Fauna</h1>
+        <div class="carrusel" id="Cenotes">
+            <button class="anterior" id="boton-anterior">Anterior</button>
+            <div class="visor">
+                <div class="imagenes-carrusel">
+                    <!-- Las imágenes se mostrarán aquí -->
+                    <img src="img/flora/1 Flora.png" alt="">
+
+                </div>
+            </div>
+            <button class="siguiente" id="boton-siguiente">Siguiente</button>
+        </div>
+
     </section>
     <section class="cenotes" id="cenotes">
         <h1>Cenotes</h1>
@@ -72,13 +114,32 @@
             </div>
             <button class="siguiente" id="boton-siguiente">Siguiente</button>
         </div>
-
-
+    </section>
+    <section class="marina" id="marina">
+        <div class="carrusel">
+            <button class="anterior">Anterior</button>
+            <div class="visor">
+                <div class="imagenes-carrusel">
+                    <!-- Las imágenes se mostrarán aquí -->
+                    <img src="img/fauna/Prompt 1.jpg" alt="">
+                    <img src="img/marina/Prompt 10.jpg" alt="">
+                    <img src="img/marina/Prompt 2 1.jpg" alt="">
+                    <img src="img/marina/Prompt 2.jpg" alt="">
+                    <img src="img/marina/Prompt 4 1.jpg" alt="">
+                    <img src="img/marina/Prompt 5.jpg" alt="">
+                    <img src="img/marina/Prompt 9.jpg" alt="">
+                    <img src="img/marina/Prompt 7.jpg" alt="">
+                    <!-- Agrega más imágenes aquí si es necesario -->
+                </div>
+            </div>
+            <button class="siguiente">Siguiente</button>
+        </div>
+    </div>
     </section>
     <footer>
         <p>&copy; 2023 Nasa Grupo:Apo110</p>
     </footer>
-    
-    <script src="codigo.js"></script>
+    <script src="js/codigo.js"></script>
+    <script type="module" src="js/main copy.js"></script>
 </body>
 </html>

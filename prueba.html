@@ -1,66 +1,29 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Modelo 3D en formato .glb con Three.js</title>
-    <script async src="https://ga.jspm.io/npm:es-module-shims@1.8.0/dist/es-module-shims.js"></script>
-  </head>
-  <body>
-    
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Millennium Falcon</title>
 
+		<link rel="stylesheet" href="public/index.css">
 
-
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
     <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/browse/three@0.145.0/build/three.module.js"
-
-            }
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.153.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.153.0/examples/jsm/"
         }
+      }
     </script>
-
-    <script type="module">
-        import * as THREE from 'three';
-        import { OrbitControls} from 'https://unpkg.com/three@0.145.0/examples/jsm/controls/OrbitControls.js'
-        import { GLTFLoader } from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/examples/jsm/loaders/GLTFLoader.js';
-        import { DRACOLoader } from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/examples/jsm/loaders/DRACOLoader.js';
-
-        const renderer =new THREE.WebGLRenderer({ antialias: true });
-        renderer.setSize( window.innerWidth, window.innerHeight );
-        document.body.appendChild( renderer.domElement );
+	</head>
+	<body>
+    
+    <div id="progress-container">
+      <div id="progress">LOADING 0/100</div>
+    </div>
+    <div id="scene-container" style="width: 200px; height: 200px; margin: auto;"></div>
 
 
-        const scene = new THREE.Scene();
-        scene.background = new THREE.Color( 0x000000 );
-          
-        const camara = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-        camara.position.set( 0, 0, 5 );
-
-        const ambients = new THREE.AmbientLight( 0xffffff, 0.5 );
-        scene.add( ambients );
-
-
-        //
-        const controls = new OrbitControls( camara, renderer.domElement );
-        controls.addEvenListener( 'change', () => renderer.render( scene, camara ) );
-         controls.target.set( 0, 0, 0 );
-         controls.update()
-        
-
-        const loader = new GLTFLoader();
-        loader.load('img/planeta.glb', function(gltf){
-            const model = gltf.scene
-            scene.add(model)
-
-            renderer.render( scene, camara );
-        }, undefined, function(error){
-            console.error(error);
-        });
-        
-        
-
-
-
-
-    </script>
-  </body>
+		<script type="module" src="js/main copy.js"></script>
+	</body>
 </html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>ExoPlanetas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    
+    <link rel="stylesheet" href="public/index.css">
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.153.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.153.0/examples/jsm/"
+        }
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>ExoPlanetas Kepler-438b</h1>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#flora">Flora</a></li>
+                <li><a href="#fauna">Fauna</a></li>
+                <li><a href="#Cenotes">Cenotes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="scene-container" style="width: 400px; height: 400px; margin: auto;"></div>
+        <section class="planeta">
+            <h1>Historia Kepler-438b</h1>
+            <p class="historia-text">
+                Kepler-438b, un exoplaneta que forma parte del sistema Kepler-438, se encuentra a 472.9 años luz de distancia de nuestro sistema solar y fue confirmado en enero de 2015 gracias al telescopio espacial Kepler. Este descubrimiento no solo marcó un hito en la exploración espacial, sino que también redefinió nuestro entendimiento de la habitabilidad en el universo.
+                <br>
+                Inicialmente, Kepler-438b parecía un prometedor análogo terrestre debido a su masa, radio y temperatura de equilibrio similares a los de la Tierra. Sin embargo, su proximidad a una enana naranja de tipo K-tardío llamada Kepler-438 presentó desafíos significativos. La radiación intensa que recibía de su estrella y su órbita cercana planteaban preocupaciones sobre su habitabilidad.
+<br>
+                Uno de los desafíos más notables es el anclaje de marea, que ha llevado a una sincronización entre su órbita y rotación, lo que significa que tiene un lado diurno abrasador y un lado nocturno congelado. Esto dificulta la presencia de vida compleja en su superficie.
+<br>
+                Además, la alta radiación y la exposición a los vientos estelares de su estrella podrían comprometer su atmósfera. Su temperatura media superficial, de 37.45 °C, es mucho más cálida que la de la Tierra, y su proximidad a Kepler-438 aumenta la fotólisis del agua superficial, lo que podría llevar a un intenso escape hidrodinámico y un efecto invernadero descontrolado.
+<br>
+                A pesar de estos desafíos, la esperanza fue reavivada en junio de 2022 cuando científicos informaron sobre una "misteriosa" señal de radio procedente de la región de Kepler-438b, abriendo la posibilidad de indicios de vida o actividad interesante en este exoplaneta.
+<br>
+                La historia de Kepler-438b es un recordatorio de la complejidad de la búsqueda de vida más allá de la Tierra y cómo las condiciones específicas de un exoplaneta pueden influir en su habitabilidad. A medida que continuamos explorando el universo, seguimos buscando respuestas sobre la existencia de vida en otros rincones del cosmos.
+            </p>
+            
+            
+        </section>
+        <!-- Agrega más secciones para otros planetas aquí -->
+    </main>
+    <section class="historia" id="historia">
+        <div class="md-medio">
+            <h1>Killer</h1>
+        
+            <img src="img/planeta/235382_Kepler-438b, a confirmed exoplanet discovered in 2_xl-1024-v1-0.png" alt="" width="500" height="500">
+        </div>
+          
+    </section>
+    <section class="flora" id="flora">
+        
+        <h1>Flora</h1>
+        <div class="carrusel" id="Cenotes">
+            <button class="anterior" id="boton-anterior">Anterior</button>
+            <div class="visor">
+                <div class="imagenes-carrusel">
+                    <!-- Las imágenes se mostrarán aquí -->
+                    <img src="img/fauna/Prompt 1.jpg" alt="">
+                    
+                </div>
+            </div>
+            <button class="siguiente" id="boton-siguiente">Siguiente</button>
+        </div>
+
+    </section>
+    <section class="fauna" id="fauna">
+        
+        <h1>Fauna</h1>
+        <div class="carrusel" id="Cenotes">
+            <button class="anterior" id="boton-anterior">Anterior</button>
+            <div class="visor">
+                <div class="imagenes-carrusel">
+                    <!-- Las imágenes se mostrarán aquí -->
+                    <img src="img/flora/1 Flora.png" alt="">
+
+                </div>
+            </div>
+            <button class="siguiente" id="boton-siguiente">Siguiente</button>
+        </div>
+
+    </section>
+    <section class="cenotes" id="cenotes">
+        <h1>Cenotes</h1>
+       
+        <!-- Agrega el carrusel -->
+        <div class="carrusel" id="Cenotes">
+            <button class="anterior" id="boton-anterior">Anterior</button>
+            <div class="visor">
+                <div class="imagenes-carrusel">
+                    <!-- Las imágenes se mostrarán aquí -->
+                    <img src="img/senotes/WhatsApp Image 2023-10-07 at 16.56.09.jpeg" alt="">
+                    <img src="img/senotes/WhatsApp Image 2023-10-07 at 16.56.10 (1).jpeg" alt="">
+                    <img src="img/senotes/WhatsApp Image 2023-10-07 at 16.57.12.jpeg" alt="">
+                    <img src="img/senotes/WhatsApp Image 2023-10-07 at 16.57.12 (1).jpeg" alt="">
+                </div>
+            </div>
+            <button class="siguiente" id="boton-siguiente">Siguiente</button>
+        </div>
+
+
+    </section>
+    <footer>
+        <p>&copy; 2023 Nasa Grupo:Apo110</p>
+    </footer>
+    
+    <script src="js/codigo.js"></script>
+    <script type="module" src="js/main copy.js"></script>
+</body>
+</html>
