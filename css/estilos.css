@@ -11,9 +11,22 @@ header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 0px; /* Aumentar el padding para dar más espacio */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: top 0.3s;
 }
 
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 100px; /* Agregar margen superior para dejar espacio desde el encabezado */
+}
 /* Estilos para el título del encabezado */
 header h1 {
     font-size: 36px;

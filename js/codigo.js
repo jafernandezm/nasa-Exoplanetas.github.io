@@ -55,3 +55,13 @@ const numeroDeImagenes = 5; // Cambia esto al número deseado de imágenes
 const carpetaDeImagenes = 'img/flora'; // Cambia esto a la ruta de tu carpeta
 const elementoCarruselId = 'imagenes-carrusel'; // Cambia esto al ID de tu elemento HTML
 cargarImagenesEnCarrusel(numeroDeImagenes, carpetaDeImagenes, elementoCarruselId);
+
+
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  if (window.pageYOffset > 100) { // Cambia 100 por la cantidad de píxeles que desees
+      header.style.top = "0"; // Hace que el encabezado sea estático
+  } else {
+      header.style.top = "-100px"; // Oculta el encabezado si el usuario está arriba
+  }
+});
