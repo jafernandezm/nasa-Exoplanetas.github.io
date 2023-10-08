@@ -190,3 +190,27 @@ footer a {
     margin: 0 auto;
 
 }
+
+
+
+
+.maqueta-dos {
+    /* Estilos para el contenedor principal (puedes personalizar según tus necesidades) */
+    width: 100%; /* Ancho del section */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f0f0f0; /* Color de fondo (opcional) */
+  }
+  
+  .imagenes-en-horizontal {
+    /* Estilos para el contenedor de las imágenes */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-between; /* Distribuye las imágenes horizontalmente con espacio entre ellas */
+    align-items: center; /* Centra verticalmente las imágenes (opcional) */
+  }
+  
+  .imagenes-en-horizontal img {
+    /* Estilos para las imágenes */
+    max-width: 45%; /* Ancho máximo de las imágenes para dejar espacio entre ellas */
+    height: auto; /* Altura automática para mantener la proporción original */
+  }
+  
