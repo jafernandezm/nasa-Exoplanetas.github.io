@@ -49,7 +49,7 @@ spotLight.shadow.bias = -0.0001;
 scene.add(spotLight);
 
 const loader = new GLTFLoader().setPath('public/millennium_falcon/');
-loader.load('PlanetaHabitable.glb', (gltf) => {
+loader.load('turquisa.glb', (gltf) => {
     const mesh = gltf.scene;
 
     mesh.traverse((child) => {
