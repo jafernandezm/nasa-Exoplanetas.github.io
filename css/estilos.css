@@ -75,12 +75,15 @@ main {
 .planeta p {
     text-align: justify; /* Alinea el texto de forma justificada */
     font-size: 16px; /* Tamaño de fuente predefinido */
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 80px;
     margin-right: 100px;
     color: #666;
 }
 
-
+.imagen-con-margen{
+    margin: auto;
+}
 
 /* Estilos para las secciones adicionales */
 section {
