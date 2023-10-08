@@ -81,9 +81,7 @@ main {
     color: #666;
 }
 
-.imagen-con-margen{
-    margin: auto;
-}
+
 
 /* Estilos para las secciones adicionales */
 section {
@@ -195,15 +193,38 @@ footer a {
 }
 
 
+.maqueta-video {
+    /* Estilos para el contenedor principal (puedes personalizar según tus necesidades) */
+   width: 100%; /* Ancho del section */
+   padding: 20px; /* Espaciado interno */
 
+   display: flex;
+   flex-direction: column;
+   justify-content: center; /* Centrar verticalmente */
+   align-items: center; /* Centrar horizontalmente */
+   margin: 0;
+   padding: 0;
+   text-align: center; /* Alinear el texto en el centro (opcional) */
+ }
 
 .maqueta-dos {
-    /* Estilos para el contenedor principal (puedes personalizar según tus necesidades) */
+     /* Estilos para el contenedor principal (puedes personalizar según tus necesidades) */
     width: 100%; /* Ancho del section */
     padding: 20px; /* Espaciado interno */
-    background-color: #f0f0f0; /* Color de fondo (opcional) */
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    margin: 0 auto;
+    text-align: center; /* Alinear el texto en el centro (opcional) */
   }
   
+  .maqueta-dos img {
+    margin: 10px; /* Agregar espacio entre las imágenes */
+    border: 5px solid #b96060; /* Añadir un borde blanco alrededor de las imágenes */
+}
+
   .imagenes-en-horizontal {
     /* Estilos para el contenedor de las imágenes */
     display: flex; /* Utiliza el modelo de caja flexible */
